@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+    padding-top: 70px; /* Space for fixed navbar */
+}
+
+/* Utilities */
+.section-padding {
+    padding: 80px 0;
+}
+
+.line-dec {
+    width: 60px;
+    height: 3px;
+    background-color: #08d195;
+    margin-top: 10px;
+}
+
+.bg-purple {
+    background-color: #6f42c1;
+}
+
+/* Profil Section */
+#profil {
+    min-height: 90vh;
+    background: linear-gradient(180deg, rgba(8, 209, 149, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+#profil .text {
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+}
+
+.profile-img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border: 5px solid white;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* Kemampuan Section */
+.skill-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.skill-icon {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Prestasi Section */
+.hover-card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.hover-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15) !important;
+}
+
+.hover-card img {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.hover-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Footer */
+.hover-link {
+    transition: color 0.3s ease;
+}
+
+.hover-link:hover {
+    color: #08d195 !important;
+    text-decoration: underline !important;
+}
+
+.social-link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+    transform: scale(1.2);
+}
+
+.social-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .profile-img {
+        width: 250px;
+        height: 250px;
+        margin-top: 2rem;
+    }
+    
+    #profil .text {
+        text-align: center;
+    }
+    
+    #profil .text hr {
+        margin: 1.5rem auto;
+    }
+}
